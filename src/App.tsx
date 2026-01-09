@@ -7,7 +7,7 @@ import { RSVP } from "./components/RSVP";
 import { Footer } from "./components/Footer";
 import "./App.css";
 import { useEffect, useRef } from "react";
-import audioFile from "/music/a_thousand_year_song.mp3";
+import audioFile from "../public/music/a_thousand_year_song.mp3";
 
 function App() {
   const audioRef = useRef<HTMLAudioElement>(null);
