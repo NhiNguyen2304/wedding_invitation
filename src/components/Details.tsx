@@ -10,12 +10,12 @@ export const Details: React.FC = () => {
         <div className="details-grid">
           <div className="detail-card">
             <h3>📍 Venue</h3>
-            <p className="detail-title">38 Deerdale</p>
-            <p>Stafford Height</p>
-            <p>QLD, Australia</p>
+            <p className="detail-title">Comming soon</p>
+            <p>Comming soon</p>
+            <p>Comming soon</p>
             <p className="detail-phone">(61) 450 343 022</p>
             <a
-              href="https://maps.app.goo.gl/X6eah8oTho6H4Rti9"
+              href="h#"
               target="_blank"
               rel="noopener noreferrer"
               className="detail-link"

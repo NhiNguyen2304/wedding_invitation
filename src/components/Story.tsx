@@ -33,7 +33,7 @@ export const Story: React.FC = () => {
             }}
           >
             <img
-              src="/images/story.jpg"
+              src="./images/story.jpg"
               style={{
                 width: "100%",
                 height: "100%",
