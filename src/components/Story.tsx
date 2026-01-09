@@ -9,9 +9,9 @@ export const Story: React.FC = () => {
         <div className="story-content">
           <div className="story-text">
             <p>
-              We met on a cool autumn evening in 2023. What started as a chance
-              encounter at a coffee shop has blossomed into the most beautiful
-              love story we could have imagined.
+              We met on a warm summer afternoon in 2023. What started as a
+              chance encounter at a coffee shop has blossomed into the most
+              beautiful love story we could have imagined.
             </p>
             <p>
               From late-night conversations to spontaneous adventures, every
