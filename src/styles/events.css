@@ -1,0 +1,105 @@
+/* Events Section Styles */
+.events {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(135deg, #f5f3f0 0%, var(--white) 100%);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.event-card {
+    background-color: var(--white);
+    padding: var(--spacing-xxl);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 3px solid var(--secondary);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.event-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.event-type {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: var(--font-weight-light);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 1px;
+}
+
+.event-date {
+    font-weight: var(--font-weight-semibold);
+    color: var(--secondary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.event-time {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: var(--font-weight-light);
+    margin-bottom: var(--spacing-md);
+}
+
+.event-location {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    font-weight: var(--font-weight-semibold);
+}
+
+.event-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .events {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .event-card {
+        padding: var(--spacing-lg);
+    }
+
+    .event-type {
+        font-size: 1.5rem;
+    }
+
+    .event-time {
+        font-size: 1.2rem;
+    }
+}

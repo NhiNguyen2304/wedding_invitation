@@ -1,0 +1,277 @@
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background: url('/images/Bg_leaves_Final.avif') center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.hero-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    animation: fadeInUp 1s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Box Styling */
+.hero-main-box {
+    animation: slideUp 0.8s ease-out both;
+}
+
+.hero-info-boxes {
+    animation: slideUp 0.8s ease-out 0.1s both;
+    /* make the info boxes stretch full viewport width so two columns don't get squeezed */
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+.info-box {
+    animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+.decorative-top,
+.decorative-middle,
+.decorative-bottom {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    letter-spacing: 2px;
+}
+
+.decorative-middle {
+    margin: 0 0.5rem;
+}
+
+.hero-invitation {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    color: var(--secondary);
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    animation: slideUp 0.8s ease-out 0.1s both;
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 4.5rem;
+    color: var(--primary);
+    font-weight: var(--font-weight-light);
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+.hero-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: var(--font-weight-light);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero-date {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: var(--secondary);
+    font-weight: var(--font-weight-light);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero-tagline {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--primary);
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0;
+}
+
+.cta-button {
+    background-color: var(--secondary);
+    color: var(--white);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    animation: slideUp 0.8s ease-out 0.6s both;
+}
+
+.cta-button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Info Box Styling */
+.info-box-title {
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.info-box-content-intro {
+    font-family: var(--font-serif);
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.info-box-content-body {
+    font-family: var(--font-serif);
+    color: white;
+    font-size: 4rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-box-content-where {
+    font-family: var(--font-serif);
+    color: black;
+    font-weight: var(--font-weight-semibold);
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+.info-box-date {
+    font-family: var(--font-sans);
+    color: var(--secondary);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Schedule Items */
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.schedule-time {
+    font-family: var(--font-serif);
+    color: var(--secondary);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.2rem;
+    min-width: 60px;
+}
+
+.schedule-event {
+    font-family: var(--font-sans);
+    color: var(--primary);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+    .hero-content {
+        gap: 1.5rem;
+    }
+
+    .decorative-top,
+    .decorative-middle,
+    .decorative-bottom {
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-date {
+        font-size: 1.3rem;
+    }
+
+    .hero-invitation {
+        font-size: 0.9rem;
+    }
+
+    .schedule-time {
+        font-size: 1.1rem;
+    }
+
+    .schedule-event {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-date {
+        font-size: 1rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+    }
+}
