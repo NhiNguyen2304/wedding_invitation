@@ -10,9 +10,9 @@ export const Details: React.FC = () => {
         <div className="details-grid">
           <div className="detail-card">
             <h3>📍 Venue</h3>
-            <p className="detail-title">Comming soon</p>
-            <p>Comming soon</p>
-            <p>Comming soon</p>
+            <p className="detail-title">Coming soon</p>
+            <p>Coming soon</p>
+            <p>Coming soon</p>
             <p className="detail-phone">(61) 450 343 022</p>
             <a
               href="h#"

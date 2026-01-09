@@ -80,10 +80,10 @@ export const Hero: React.FC = () => {
             style={{ background: "rgba(253, 250, 244, 1)" }}
           >
             <p className="info-box-content-where text-primary font-serif text-base md:text-lg mb-2">
-              Comming soon
+              Coming soon
             </p>
             <p className="info-box-content-where text-primary font-serif text-base md:text-lg mb-2">
-              Comming soon
+              Coming soon
             </p>
 
             <div className="schedule-item flex flex-col items-center justify-center text-center p-2 mb-3 pb-3">

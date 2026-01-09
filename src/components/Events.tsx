@@ -18,7 +18,7 @@ export const Events: React.FC = () => {
       type: "Ceremony",
       date: "Friday, September 19th, 2026",
       time: "5:00 PM",
-      location: "Comming soon",
+      location: "Coming soon",
       description:
         "Join us as we exchange vows and begin our new chapter together.",
       icon: "💍",
@@ -28,7 +28,7 @@ export const Events: React.FC = () => {
       type: "Reception",
       date: "Friday, September 19th, 2026",
       time: "6:00 PM",
-      location: "Comming soon",
+      location: "Coming soon",
       description: "Celebration, dinner, and dancing with our loved ones.",
       icon: "🥂",
     },
